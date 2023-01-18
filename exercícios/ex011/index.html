@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../ex007/icone1.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+    <picture> <!--parece uma imagem, permite que crie várias fontes, sources--> 
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--ou seja, se o tamanho máximo for de 1000px (esse 1050 é que os 50 são da barra de rolagem, pra n interferir e aparecer na troca) ele carrega a foto G, já se for menor, carrega a foto M-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível"> <!--base, imagem padrão-->
+    </picture>
+</body>
+</html>
