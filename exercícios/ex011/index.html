@@ -16,5 +16,17 @@
         <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png"> <!--ou seja, se o tamanho máximo for de 1000px (esse 1050 é que os 50 são da barra de rolagem, pra n interferir e aparecer na troca) ele carrega a foto G, já se for menor, carrega a foto M-->
         <img src="imagens/foto-g.png" alt="Imagem flexível"> <!--base, imagem padrão-->
     </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5  </p>
+    <audio src="media/FunKid.mp3" controls ></audio>
+    <!--compatibilidades MP3, WAV, OGG--> <!--coloca autoplay depois de controls de quiser que ele comece a tocar automaticamente -->
+    <audio preload="metadata" controls  loop>
+        <source src="media/FunKid.mp3" type="audio/mpeg">
+        <source src="media/FunKid.ogg" type="audio/ogg">
+        <source src="media/FunKid.wav" type="image/wav">
+        <p>se não carregar nenhum desses o navegador não consegue reproduzir áudios. <a href="media/FunKid.mp3" dowload="audio.mp3" type="audio/mpeg"
+            target="_blank">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>  
 </body>
 </html>
